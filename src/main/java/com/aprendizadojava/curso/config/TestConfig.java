@@ -1,20 +1,20 @@
 package com.aprendizadojava.curso.config;
 
-import com.aprendizadojava.curso.entities.User;
-import com.aprendizadojava.curso.entities.Order;
-
 import java.time.Instant;
 import java.util.Arrays;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
+import com.aprendizadojava.curso.entities.Order;
+import com.aprendizadojava.curso.entities.User;
+import com.aprendizadojava.curso.entities.enums.OrderStatus;
+import com.aprendizadojava.curso.repositories.CategoryRepository;
 import com.aprendizadojava.curso.repositories.OrderRepository;
 import com.aprendizadojava.curso.repositories.UserRepository;
-import com.aprendizadojava.curso.entities.enums.OrderStatus;
-
-import org.springframework.boot.CommandLineRunner;
+import com.aprendizadojava.curso.entities.Category;
 
 @Configuration
 @Profile("test")
@@ -25,6 +25,9 @@ public class TestConfig implements CommandLineRunner {
 
     @Autowired
     private OrderRepository orderRepository;
+
+    @Autowired
+    private CategoryRepository categoryRepository;
 
     @Override
     public void run(String... args) throws Exception {
@@ -37,5 +40,12 @@ public class TestConfig implements CommandLineRunner {
 
         userRepository.saveAll(Arrays.asList(u1, u2));
         orderRepository.saveAll(Arrays.asList(o1, o2, o3));
+
+        Category cat1 = new Category(null, "Electronics");
+        Category cat2 = new Category(null, "Books");
+        Category cat3 = new Category(null, "Computers");
+
+        categoryRepository.saveAll(Arrays.asList(cat1, cat2, cat3));
+
     }
 }
