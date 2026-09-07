@@ -1,4 +1,6 @@
 
+package com.aprendizadojava.curso;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
