@@ -1,4 +1,4 @@
-package com.aprendizadojava.curso;
+package com.aprendizadojava.curso.entities;
 
 import java.io.Serializable;
 
