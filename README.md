@@ -5,7 +5,7 @@
 [![Java](https://img.shields.io/badge/Java-26-orange?logo=openjdk)](https://www.oracle.com/java/)
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-4.1.1-6DB33F?logo=springboot&logoColor=white)](https://spring.io/projects/spring-boot)
 [![Maven](https://img.shields.io/badge/Maven-wrapper-C71A36?logo=apachemaven&logoColor=white)](https://maven.apache.org/)
-[![License](https://img.shields.io/badge/license-not%20defined-lightgrey)](#licenca)
+[![License](https://img.shields.io/badge/license-MIT-lightgrey)](#MIT)
 
 ## Sobre o projeto
 
@@ -234,4 +234,6 @@ Algumas evoluções naturais para o projeto:
 
 ## Licença
 
-Este projeto ainda não possui uma licença definida. Escolha e adicione uma licença antes de distribuir o código publicamente.
+Este projeto está licenciado sob a [Licença MIT](LICENSE).
+
+A Licença MIT permite uso livre, modificação e distribuição do código, desde que a atribuição original seja mantida.
